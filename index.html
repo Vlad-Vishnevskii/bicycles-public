@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preload" href="./fonts/open-sans-light.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="./fonts/open-sans-regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="./fonts/open-sans-semi-bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="./fonts/open-sans-bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <title>Велосипеды</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="main-nav container main-nav_no-js">
+      <button type="button" class="main-nav__close-btn main-nav__close-btn_no-js">
+        <svg width="24" height="25">
+          <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#about-us">
+            О нас
+            <svg width="8" height="12">
+              <use xlink:href="img/sprite_auto.svg#icon-link"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#types-of-bicycles">
+            Виды велосипедов
+            <svg width="8" height="12">
+              <use xlink:href="img/sprite_auto.svg#icon-link"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#videos-about-bicycles">
+            Видео про велосипеды
+            <svg width="8" height="12">
+              <use xlink:href="img/sprite_auto.svg#icon-link"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#contacts">
+            Контакты
+            <svg width="8" height="12">
+              <use xlink:href="img/sprite_auto.svg#icon-link"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="main-info">
+      <div class="main-info__left">
+        <div class="mobile-top">
+          <picture>
+            <source type="image/webp" srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x">
+            <!-- 1х: 67px; 2x: 136px -->
+            <img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" alt="Логотип страницы" width="67" height="20">
+          </picture>
+          <button type="button" class="mobile-top__button mobile-top__button_no-js">
+            <svg width="50" height="50">
+              <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </div>
+        <h1>
+          Мы продаем велосипеды
+        </h1>
+        <p>
+          Наш магазин отбирает только самые лучшие велосипеды для продажи
+        </p>
+      </div>
+      <div class="main-info__right application-form">
+        <form action="https://echo.htmlacademy.ru">
+          <h2>
+            Заполните поля ниже и мы подберем велосипед Вашей мечты
+          </h2>
+          <div class="application-form__field">
+            <label for="user-name">Имя</label>
+            <input id="user-name" type="text" placeholder="Введите Ваше Имя" required="" name="user-name">
+          </div>
+          <div class="application-form__field">
+            <label for="user-phone">Номер телефона</label>
+            <input id="user-phone" type="tel" placeholder="Введите Ваш номер телефона" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10}$" name="number">
+          </div>
+          <button class="button" type="submit">Подобрать велосипед мечты</button>
+        </form>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="facts container" id="about-us">
+      <h2>
+        Несколько фактов о нас
+      </h2>
+      <ol class="facts__list">
+        <li class="facts__item">Самый широкий выбор велосипедов!</li>
+        <li class="facts__item">Доставка велосипедов по всей России!</li>
+        <li class="facts__item">Большой выбор крутых аксессуаров!</li>
+        <li class="facts__item">Профессиональные консультации!</li>
+      </ol>
+    </section>
+
+    <section class="types-of-bicycles" id="types-of-bicycles">
+      <h2>
+        Виды велосипедов
+      </h2>
+      <ul class="types-of-bicycles__list">
+        <li class="types-of-bicycles__item">
+          <div class="types-of-bicycles__img-wrapper">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="img/road-bike-tablet@1x.webp 1x, img/road-bike-tablet@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/road-bike-desktop@1x.webp 1x, img/road-bike-desktop@2x.webp 2x" type="image/webp">
+              <!-- 1х: 342px; 2x: 684px -->
+              <img src="img/road-bike-desktop@1x.jpg" srcset="img/road-bike-desktop@2x.jpg 2x" alt="Велосипед на фоне стены" width="342" height="503">
+            </picture>
+          </div>
+          <p>Дорожный велосипед</p>
+        </li>
+        <li class="types-of-bicycles__item">
+          <div class="types-of-bicycles__img-wrapper">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="img/mountain-bike-tablet@1x.webp 1x, img/mountain-bike-tablet@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/mountain-bike-desktop@1x.webp 1x, img/mountain-bike-desktop@2x.webp 2x" type="image/webp">
+              <!-- 1х: 342px; 2x: 684px -->
+              <img src="img/mountain-bike-desktop@1x.jpg" srcset="img/mountain-bike-desktop@2x.jpg 2x" alt="Велосипед в горах" width="342" height="566">
+            </picture>
+          </div>
+          <p>Горный велосипед</p>
+        </li>
+        <li class="types-of-bicycles__item">
+          <div class="types-of-bicycles__img-wrapper">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="img/small-bike-tablet@1x.webp 1x, img/small-bike-tablet@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/small-bike-desktop@1x.webp 1x, img/small-bike-desktop@2x.webp 2x" type="image/webp">
+              <!-- 1х: 342px; 2x: 684px -->
+              <img src="img/small-bike-desktop@1x.jpg" srcset="img/small-bike-desktop@2x.jpg 2x" alt="Розовый велосипед" width="342" height="512">
+            </picture>
+          </div>
+          <p>Детский велосипед</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="videos-about-bicycles" id="videos-about-bicycles">
+      <div class="videos-about-bicycles__text container">
+        <h2>
+          Видео про велосипеды
+        </h2>
+        <p>
+          В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.
+        </p>
+        <div class="videos-about-bicycles__image-wrapper">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/video-preview-mobile@1x.webp 1x, img/video-preview-mobile@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1023px)" srcset="img/video-preview-tablet@1x.webp 1x, img/video-preview-tablet@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="img/video-preview-desktop@1x.webp 1x, img/video-preview-desktop@2x.webp 2x" type="image/webp">
+            <!-- 1х: 929px; 2x: 1858px -->
+            <img src="img/video-preview-desktop@1x.jpg" srcset="img/video-preview-desktop@2x.jpg 2x" alt="Видео про велосипеды" width="929" height="522">
+          </picture>
+          <button type="button" class="videos-about-bicycles__play-button button button_round">
+            <svg width="13" height="18">
+              <use xlink:href="img/sprite_auto.svg#icon-play"></use>
+            </svg>
+            <span class="visually-hidden">
+              Воспроизвести
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer container" id="contacts">
+    <h3>
+      Как нас найти?
+    </h3>
+    <p>
+      Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19
+    </p>
+    <picture>
+      <source media="(max-width: 767px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x" type="image/webp">
+      <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" type="image/webp">
+      <source media="(min-width: 1024px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x" type="image/webp">
+      <!-- 1х: 957px; 2x: 1914px -->
+      <img src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" alt="Карта" width="957" height="530">
+    </picture>
+    <div class="page-footer__contacts">
+      <a class="page-footer__link page-footer__link_email" href="mailto:puteshestviemechta@gmail.ru">
+        <svg width="26" height="20">
+          <use xlink:href="img/sprite_auto.svg#icon-email"></use>
+        </svg>
+        puteshestviemechta@gmail.ru
+      </a>
+      <a class="page-footer__link page-footer__link_phone" href="tel:+749978468446">
+        <svg width="22" height="24">
+          <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+        </svg>
+        +7 (499) -784-684-46
+      </a>
+    </div>
+
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
